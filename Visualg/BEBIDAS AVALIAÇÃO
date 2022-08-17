@@ -1,4 +1,4 @@
-Algoritmo "BEBIDAS AVALIA«√O"
+Algoritmo "BEBIDAS AVALIA√á√ÉO"
 Var
    produto: vetor [1..5] de caracter
    vendas,preco: vetor [1..5] de real
@@ -11,7 +11,7 @@ Inicio
    sair<-"N"
    enquanto sair="N" faca
       escreval("--------------------BEBIDAS------------------------")
-      escreval("1-CADASTRAR 2-EFETUAR VENDAS- 3- RELAT”RIOS 4-SAIR")
+      escreval("1-CADASTRAR 2-EFETUAR VENDAS- 3- RELAT√ìRIOS 4-SAIR")
       escreval("---------------------------------------------------")
       leia(opcao)
       escolha opcao
@@ -24,13 +24,13 @@ Inicio
          produto[2]<-"SUCO"
          preco[2]<-6
          qtdEstoque[2]<-100
-         produto[3]<-"GUARAN¡"
+         produto[3]<-"GUARAN√Å"
          preco[3]<- 4
          qtdEstoque[3]<-100
          produto[4]<-"FANTA"
          preco[4]<-5
          qtdEstoque[4]<-100
-         produto[5]<-"¡GUA"
+         produto[5]<-"√ÅGUA"
          preco[5]<-2
          qtdEstoque[5]<-100
          limpatela
@@ -46,7 +46,7 @@ Inicio
                escreval(j," - ", produto[j]," - R$",preco[j])
             fimpara
             escreval("0-SAIR" )
-            escreval("DIGITE O C”DIGO DE UM DOS PRODUTOS:")
+            escreval("DIGITE O C√ìDIGO DE UM DOS PRODUTOS:")
             leia(codigo)
             se codigo=0 entao
                vender <- "fechar venda"
@@ -59,7 +59,7 @@ Inicio
          valorTotal<-valorTotal + total
          total<-0
       caso "3"
-         escreval("RELAT”RIO")
+         escreval("RELAT√ìRIO")
          escreval("O VALOR DE TOTAL DAS VENDAS FOI DE:"," - R$", valorTotal)
          escreval("-----------")
          leia(valorTotal)
