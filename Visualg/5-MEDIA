@@ -16,6 +16,6 @@ media<-(n1+n2+n3)/3
 escreva("ALUNO:")
 escreva(nome)
 escreval("")
-escreval(" A MEDIA TOTAL É:")
+escreval(" A MEDIA TOTAL Ã‰:")
 escreva(media)
 Fimalgoritmo
