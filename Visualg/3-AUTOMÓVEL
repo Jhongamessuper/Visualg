@@ -1,4 +1,4 @@
-Algoritmo "Automóvel"
+Algoritmo "AutomÃ³vel"
 Var
 quilometros,litros,consumomedio:real
 Inicio
@@ -7,5 +7,5 @@ leia(quilometros)
 escreval("INFORME A QUANTIDADE DE LITROS UTILIZADOS:")
 leia(litros)
 consumomedio<-quilometros/litros
-escreval("O CONSUMO MÉDIO FOI DE:",consumomedio)
+escreval("O CONSUMO MÃ‰DIO FOI DE:",consumomedio)
 Fimalgoritmo
