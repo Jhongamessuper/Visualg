@@ -1,0 +1,21 @@
+Algoritmo "Media"
+Var
+nome:caracter
+n1,n2,n3:inteiro
+media:real
+Inicio
+escreva("DIGITE O NOME DO ALUNO:")
+leia(nome)
+escreva("DIGITE A PRIMEIRA NOTA:")
+leia(n1)
+escreva("DIGITE A SEGUNDA NOTA:")
+leia(n2)
+escreva("DIGITE A TERCEIRA NOTA:")
+leia(n3)
+media<-(n1+n2+n3)/3
+escreva("ALUNO:")
+escreva(nome)
+escreval("")
+escreval(" A MEDIA TOTAL É:")
+escreva(media)
+Fimalgoritmo

@@ -1,0 +1,62 @@
+algoritmo "semnome"
+var
+   vetpalavra: vetor [1..10] de caracter
+   vetmostrar: vetor [1..10] de caracter
+   i,j,k,l,c, m,n , contador: inteiro
+   letra, palavrainteira, teste, fim:caractere
+inicio
+   para i de 1 ate 10 faca//PARA faz varias vezes comandos,IRÁ USAR A VARIÁVEL I PARA FAZER 10 VEZES
+      escreval("Digite a", i, " letra:")//ESCREVAL faz aparecer um comando na tela do ms-dos
+      leia(vetpalavra[i])//LEIA lê um comando do usuário
+   fimpara//FIMPARA encerra o comando PARA
+
+   limpatela//LIMPATELA limpa a tela dos comandos anteriores
+
+   para c de 1 ate 10 faca//IRÁ USAR A VARIÁVEL C PARA FAZER 10 VEZES
+      vetmostrar[c]<- "-"//VARIÁVEL VETMOSTRAR VAI RECEBER[C] "-"
+   fimpara//FIM DO COMANDO
+
+   para n de 1 ate 10 faca//IRÁ USAR A VARIÁVEL N PARA FAZER 10 VEZES
+      palavrainteira<-palavrainteira + vetpalavra[n]//VARIÁVEL VAI RECEBER DUAS VARIAVEIS SOMADAS
+   fimpara//FIM DO COMANDO
+
+   escreval("------------------JOGO-----------------")//INFEITE
+
+   fim<-"jogue"//VARIÁVEL FIM VAI RECEBER CARACTER "JOGUE"
+   contador<-15//CONTADOR uma variável para contar o número de chances
+   para j de 1 ate 15 faca
+      se fim = "jogue" entao//SE comando de expressão logica
+
+         escreval("- Digite uma letra")//ESCREVAL FARÁ APARECER CARACTER NA TELA DO MS-DOS
+         leia(letra)//LEIA IRÁ LER VARIÁVEL LETRA
+         escreval("você tem" , contador,  " chances para acertar")//ESCREVAL FARÁ APARECER OS CARACTERES MAIS A VARIÁVEL CONTADOR
+         contador<-contador-1//VARIÁVEL CONTADOR VAI RECEBER -1 E VAI APARECER NA TELA
+         para k de 1 ate 10 faca//IRÁ USAR A VARIÁVEL K PARA FAZER 10 VEZES
+            se vetpalavra[k] = letra entao//SE VARIÁVEL VETPALAVRA[K] FOR IGUAL A VARIÁVEL LETRA ENTAO
+               vetmostrar[k]<- letra//VARIÁVEL VETMOSTRAR[K] VAI RECEBER LETRA
+               teste<-""//VARIÁVEL TESTE VAI RECEBER ESPAÇO
+               para m de 1 ate 10 faca//IRÁ USAR A VARIÁVEL M PARA FAZER 10 VEZES
+                  teste<-teste + vetmostrar[m]//VARIÁVEL TESTE VAI RECEBER DUAS VARIÁVEIS
+               fimpara//FIM DO COMANDO
+
+               se palavrainteira = teste entao//SE A VARIÁVEL PALAVRAINTEIRA FOR IGUAL A TESTE ENTAO
+                  fim<-" - ganhou"//VARIÁVEL VAI RECEBER CARACTER "GANHOU"
+               fimse//TERMINA o comando SE
+            fimse//FIM DO COMANDO
+
+         fimpara//FIM DO COMANDO
+         para l de 1 ate 10 faca//IRÁ USAR A VARIÁVEL L PARA FAZER 10 VEZES
+            escreva(vetmostrar[l])//ESCREVAL FARÁ APARECER VARIÁVEL VETMOSTRAR[L] NA TELA DO MS-DOS
+         fimpara//FIM DO COMANDO
+      senao//SENAO
+      fimse//FIM DO COMANDO
+
+
+   fimpara//FIM DO COMANDO
+
+   se palavrainteira <> teste entao//SE A VARIÁVEL PALAVRAINTEIRA FOR DIFERENTE A TESTE ENTAO
+      escreval(" - Perdeu")//ESCREVAL IRÁ FAZER APARECER PERDEU NA TELA DO MS-DOS
+   senao//SENAO FOR DIFERENTE
+      escreval(fim)//ESCREVAL FARÁ APARECER VARIÁVEL FIM NO MS-DOS
+   fimse//FIM DO COMANDO
+fimalgoritmo
