@@ -1,0 +1,11 @@
+Algoritmo "Automóvel"
+Var
+quilometros,litros,consumomedio:real
+Inicio
+escreval("INFORME A QUILOMETRAGEM PERCORRIDA:")
+leia(quilometros)
+escreval("INFORME A QUANTIDADE DE LITROS UTILIZADOS:")
+leia(litros)
+consumomedio<-quilometros/litros
+escreval("O CONSUMO MÉDIO FOI DE:",consumomedio)
+Fimalgoritmo
